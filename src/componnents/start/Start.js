@@ -2,36 +2,47 @@ import React, { useState } from 'react';
 import Option from '../option/Option';
 
 const Start = ({q}) => {
-   console.log(q)
+
    const {question,options,correctAnswer}= q;
-       const findCorrectAns = options.map(op =>  {const find = op.length} );
+
+
+   console.log(options.length)
+
+
+       const findCorrectAns = options.map(op =>  console.log(op) );
       
-     const handelAddToCart = () =>{
-        if( findCorrectAns === correctAnswer){
-             
-             alert('yas')
+     const handelAddToCart = (op) =>{
+        const setScore = [];
+        if( op === correctAnswer){
+             alert('Right answer 1marks');
+             const score = setScore.push(correctAnswer);
+             const newScore = score+1;
+             console.log(newScore)
+          
         }
         else{
-            alert('no')
+            alert('wrong answer')
             // console.log(options)
             // console.log(correctAnswer)
         }
       }
      
     return (
+
         <div className='border p-8 m-20 mt-10 bg-orange-200'>
              <div className='text-2xl'>{question}
-
-             
+               
                 {
-                    options.map(option => <Option
+                   options.map(option => <Option
                     option={option}
                     handelAddToCart={handelAddToCart}
                     ></Option> )
                 }
            </div>
+
+           
         </div>
-    );
+    )
 };
 
 export default Start;
