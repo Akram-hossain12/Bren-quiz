@@ -10,7 +10,7 @@ const Banner = () => {
                 <h1 className='text-6xl font-semibold text-rose-400'>Can You Pass <br/> <span className='text-4xl mt-10 mb-10'>This Brain Busting </span><br/>Trivia Quiz?</h1>
              </div>
              <div className='flex justify-center items-center p-14 imgBanner'>
-                <img src={img} alt=''/>
+                <img className='overflow-hidden' src={img} alt=''/>
              </div>
         </div>
     );
