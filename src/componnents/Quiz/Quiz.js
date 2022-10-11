@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Quiz = ({datas}) => {
-     console.log(datas)
+     // console.log(datas)
      const {name,logo,id}=datas;
     
     return (

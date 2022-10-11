@@ -9,9 +9,9 @@ const QuizStart = ({params}) => {
     return (
         <div>
            {
-            questions.map(question => <Start
-            key={question.id}
-            question ={question}
+            questions.map(q => <Start
+            key={q.id}
+             q ={q}
             ></Start>)
            }
         </div>
