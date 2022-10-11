@@ -11,7 +11,7 @@ const Quiz = ({datas}) => {
        
                   <img className='object-contain  h-48 w-96 p-4 border-orange-600 bg-indigo-500' src={logo} alt="" />
                   <h2 className='text-3xl font-semibold text-center'>Topis : {name}</h2>
-                   <button className='text-2xl font-bold text-white p-4 rounded bg-red-400'><Link to={`/quiz/${id}`}>start quiz</Link></button>
+                   <button className='text-2xl font-bold text-white p-4 rounded bg-red-400'><Link to={`/quiz/${id}`}>Start Quiz</Link></button>
              </div>
         </div>
     );
