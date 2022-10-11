@@ -19,7 +19,7 @@ const Start = ({q}) => {
       }
      
     return (
-        <div className='border p-8 grid grid-cols-1 ml-80 mr-80 mt-10 bg-orange-200'>
+        <div className='border p-8 m-20 mt-10 bg-orange-200'>
              <div className='text-2xl'>{question}
 
              
