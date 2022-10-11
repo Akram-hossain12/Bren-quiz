@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom';
 const Header = () => {
     return (
         <div className='grid grid-cols-2 p-5'>
-            <div className='text-center text-4xl font-bold'>
-                <h1><Link to='/'>Brain-Quiz</Link></h1>
+            <div className='text-center text-4xl font-bold text-indigo-400'>
+                <h1><Link to='/'>CodersBrain-Quiz</Link></h1>
             </div>
             <div className='mx-6 text-2xl font-semibold '>
                 <Link to='/'>Quizes</Link>
